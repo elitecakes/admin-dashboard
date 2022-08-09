@@ -2,13 +2,28 @@ body {
     display: grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
-
+    height: 100vh;
+    margin: 0;
 }
 
 .header {
     display: grid;
     background-color: lightgrey;
     grid-area: 1 / 2 / 2 / 3; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 .mainContent {
@@ -23,6 +38,7 @@ body {
     display: grid;
     background-color: lightpink;
     grid-area: 1 / 1 / 3 / 2;
+    grid-template-rows: repeat(10, 1fr) 3fr;
 }
 
 .card {
@@ -34,5 +50,27 @@ body {
 .mainLeft {
     grid-column-start: 1;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 6fr;
+}
+
+.title {
+    grid-row-start: 1;
+}
+.projects {
+    grid-row-start: 2;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     gap: 15px;
+}
+
+.mainRight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 4fr 1fr 4fr;
+
+}
+
+ul {
+    list-style: none;
 }
