@@ -6,24 +6,71 @@ body {
     margin: 0;
 }
 
+svg {
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
 .header {
     display: grid;
-    background-color: lightgrey;
+    background-color: white;
     grid-area: 1 / 2 / 2 / 3; 
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
+    padding: 20px;
 }
 
+.magGlass {
+    justify-self: right;
+    align-self: center;
+    padding-right: 10px;
+}
 .search {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 4fr repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
+
+.searchbar {
+    border: none;
+    height: 35px;
+    border-radius: 35px;
+    background-color: lightgrey;
+    width: 100%;
+
+}
+
+.crop {
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.pfp {
+    display: inline;
+    
+    position: relative;
+    top: -9px;
+    right: 34.5px;
+
+    
+}
+
+
 
 .greeting {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+}
+
+.post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .mainContent {
@@ -73,4 +120,6 @@ body {
 
 ul {
     list-style: none;
+    text-decoration: none;
+    padding-left: 0px;
 }
